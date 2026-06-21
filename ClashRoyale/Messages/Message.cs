@@ -68,6 +68,15 @@
             get;
             set;
         }
+
+        /// <summary>
+        /// The identifier of this message.
+        /// </summary>
+        public short _Identifier
+        {
+            get;
+            set;
+        }
         
         /// <summary>
         /// Initializes a new instance of the <see cref="Message"/> class.
@@ -108,6 +117,17 @@
         public byte[] GetBytes()
         {
             return this.Stream.ToArray();
+        }
+
+        /// <summary>
+        ///     Gets bytes of stream as a property.
+        /// </summary>
+        public byte[] ToBytes
+        {
+            get
+            {
+                return this.Stream.ToArray();
+            }
         }
 
         /// <summary>

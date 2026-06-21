@@ -31,7 +31,7 @@
                 return;
             }
 
-            var MongoClient     = new MongoClient("mongodb://GL.Servers.CR:YXPZvFNuryLwWyD4fDckxEV5qFH1f3jBWck8scvt@ns1.gobelinland.fr:27017");
+            var MongoClient = new MongoClient("mongodb://localhost:27017");
             var MongoDb         = MongoClient.GetDatabase("ClashRoyale-API");
 
             Logging.Info(typeof(GameDb), "GameDb is connected to " + MongoClient.Settings.Server.Host + ".");

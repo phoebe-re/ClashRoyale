@@ -42,7 +42,7 @@
                     return "https://raw.githubusercontent.com/BerkanYildiz/Patchs/master/ClashRoyale";
                 }
 
-                return "http://7166046b142482e67b30-2a63f4436c967aa7d355061bd0d924a1.r65.cf1.rackcdn.com";
+                return "https://99faf1e355c749a9a049-2a63f4436c967aa7d355061bd0d924a1.ssl.cf1.rackcdn.com";//"http://7166046b142482e67b30-2a63f4436c967aa7d355061bd0d924a1.r65.cf1.rackcdn.com";
             }
         }
 

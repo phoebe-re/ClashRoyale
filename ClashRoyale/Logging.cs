@@ -15,7 +15,7 @@
         [Conditional("DEBUG")]
         public static void Info(Type Type, string Message)
         {
-            Debug.WriteLine("[ INFO  ] " + Type.Name.Pad() + " : " + Message);
+            Console.WriteLine("[ INFO  ] " + Type.Name.Pad() + " : " + Message);
         }
 
         /// <summary>
@@ -25,7 +25,7 @@
         /// <param name="Message">The message.</param>
         public static void Warning(Type Type, string Message)
         {
-            Debug.WriteLine("[WARNING] " + Type.Name.Pad() + " : " + Message);
+            Console.WriteLine("[WARNING] " + Type.Name.Pad() + " : " + Message);
 
             /* if (Sentry.Initialized)
             {
@@ -48,9 +48,9 @@
         /// <param name="Message">The message.</param>
         public static void Error(Type Type, string Message)
         {
-            Debug.WriteLine("[ ERROR ] " + Type.Name.Pad() + " : " + Message);
+            Console.WriteLine("[ ERROR ] " + Type.Name.Pad() + " : " + Message);
 
-            if (Sentry.Initialized)
+            /*if (Sentry.Initialized)
             {
                 var SentryEvent = new SentryEvent(Message)
                 {
@@ -61,7 +61,7 @@
                 SentryEvent.Tags.Add("projectName", Type.Assembly.GetName().Name);
 
                 Sentry.Raven.CaptureAsync(SentryEvent);
-            }
+            }*/
         }
 
         /// <summary>
@@ -71,9 +71,9 @@
         /// <param name="Message">The message.</param>
         public static void Fatal(Type Type, string Message)
         {
-            Debug.WriteLine("[ FATAL ] " + Type.Name.Pad() + " : " + Message);
+            Console.WriteLine("[ FATAL ] " + Type.Name.Pad() + " : " + Message);
 
-            if (Sentry.Initialized)
+            /*if (Sentry.Initialized)
             {
                 var SentryEvent = new SentryEvent(Message)
                 {
@@ -84,7 +84,7 @@
                 SentryEvent.Tags.Add("projectName", Type.Assembly.GetName().Name);
 
                 Sentry.Raven.CaptureAsync(SentryEvent);
-            }
+            }*/
         }
     }
 }

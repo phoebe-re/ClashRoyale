@@ -110,11 +110,11 @@
             
             if (EntityId.IsZero == false)
             {
-                Clan Clan = null;
+                Clan clan = null;
 
-                if (Clan != null)
+                if (clan != null)
                 {
-                    return Clan;
+                    return clan;
                 }
                 else
                 {

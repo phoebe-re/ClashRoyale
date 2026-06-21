@@ -181,20 +181,20 @@
         /// <summary>
         /// Deserializes the specified entity.
         /// </summary>
-        public bool Deserialize(out Clan Clan)
+        public bool Deserialize(out Clan clan)
         {
             if (this.Profile != null)
             {
-                Clan = JsonConvert.DeserializeObject<Clan>(this.Profile.ToJson(), ClanDb.JsonSettings);
+                clan = JsonConvert.DeserializeObject<Clan>(this.Profile.ToJson(), ClanDb.JsonSettings);
 
-                if (Clan != null)
+                if (clan != null)
                 {
                     return true;
                 }
             }
             else
             {
-                Clan = null;
+                clan = null;
             }
 
             return false;

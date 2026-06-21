@@ -103,12 +103,12 @@
                 {
                     if (Program.Initialized)
                     {
-                        if (string.Equals(Message.MasterHash, Fingerprint.Masterhash))
-                        {
+                        /*if (string.Equals(Message.MasterHash, Fingerprint.Masterhash))
+                        {*/
                             return true;
-                        }
+                        //}
 
-                        Device.NetworkManager.SendMessage(new LoginFailedMessage(Reason.Patch));
+                        //Device.NetworkManager.SendMessage(new LoginFailedMessage(Reason.Patch));
                     }
                     else
                     {
