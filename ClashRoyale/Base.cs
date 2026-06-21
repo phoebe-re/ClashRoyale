@@ -30,6 +30,8 @@
                 return;
             }
 
+            // Rely on normal CLR probing and app.config binding redirects.
+
             // Sentry.Initialize();
             XorShift.Initialize();
 
@@ -47,7 +49,9 @@
 
             Tests.Initialize();
 
-            Base.Initialized = true;;
+            Base.Initialized = true;
         }
+
+        
     }
 }

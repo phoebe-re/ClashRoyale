@@ -102,7 +102,7 @@ MKDIR "$(TargetDir)Library\"</PreBuildEvent>
     <PostBuildEvent>cd "$(TargetDir)"
 del /F /Q *.xml
 del /F /Q *.pdb
-move /Y *.dll "Library\"</PostBuildEvent>
+copy /Y *.dll "Library\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

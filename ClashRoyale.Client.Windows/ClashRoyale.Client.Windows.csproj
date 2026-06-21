@@ -145,6 +145,6 @@ MKDIR "$(TargetDir)Logs\"</PreBuildEvent>
     <PostBuildEvent>cd "$(TargetDir)"
 del /F /Q *.xml
 del /F /Q *.pdb
-move /Y *.dll "Library\"</PostBuildEvent>
+copy /Y *.dll "Library\"</PostBuildEvent>
   </PropertyGroup>
 </Project>
